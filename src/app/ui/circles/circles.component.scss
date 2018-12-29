@@ -1,0 +1,26 @@
+@import "fonts";
+@import "mixins";
+
+svg{
+    //@include box_shadow(5);
+   // background: blue;
+    position: absolute;
+    right:10px;
+}
+.circle_label{
+    @include box_shadow(1);
+    background-image: radial-gradient(50% 100%, rgba(#6E7A96,.5) 50%, rgba(#4B5476,.5) 100%);
+    height:calc(100% - 100px);
+    width:50%;
+    position:absolute;
+    border-radius:10px;
+    bottom:50px;
+    top:50px;
+}
+#content{
+    position: relative;
+    display: block;
+    padding:50px;
+    
+}
+

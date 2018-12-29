@@ -1,0 +1,19 @@
+<div class="banner" style="padding-top:110px">
+    <img class="banner-img" src="assets/img/IMAGE_1.svg">
+    <div class="banner-overlay"></div>
+  <div class="text">
+    <div class="title">What We Do</div>
+    <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae sapien eu lacus aliquet auctor. Maecenas porta, risus sed gravida pulvinar, odio risus sollicitudin lectus, laoreet mattis sapien eros in neque. Aliquam id pellentesque eisus molestie. Quisque scelerisque tristique nisl ut vehicula</div>
+    <button type="button" class="btn btn-outline-primary" (click)="open(content)">Get In Touch</button>
+  </div>
+  
+</div>
+<div class="banner">
+  <img class="banner-img left" src="assets/img/IMAGE_2.svg">
+</div>
+<div class="banner">
+  <img class="banner-img full" src="assets/img/IMAGE_3.svg">
+</div>
+<ng-template #content let-modal>
+    <app-contact-modal></app-contact-modal>
+</ng-template>

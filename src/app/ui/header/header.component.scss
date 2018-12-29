@@ -1,0 +1,63 @@
+@import "variables";
+@import "mixins";
+@import 'fonts';
+.header{
+    position: absolute;
+    display: block;
+    height:100px;
+    padding:36px 90px 36px 90px;
+    //background: $color-main;
+    background-image: linear-gradient(-180deg, rgba(39,49,72,0.98) 27%, rgba(39,49,72,0.93) 32%, rgba(39,49,72,0.84) 39%, rgba(39,49,72,0.73) 46%, rgba(39,49,72,0.59) 53%, rgba(39,49,72,0.45) 61%, rgba(39,49,72,0.32) 69%, rgba(39,49,72,0.19) 77%, rgba(39,49,72,0.09) 85%, rgba(39,49,72,0.02) 92%, rgba(39,49,72,0.00) 100%);
+    width:100%;
+    //border-bottom:1px solid rgba($color-brand,.5);
+    //@include box_shadow(1);
+    z-index:9;
+    img{
+        height:100%;
+    }
+    .nav{
+        @extend .font-body;
+        float:right;
+        .nav-link{
+            color:white;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: .2em 1em;
+            &.active{
+                //border-left: 3px solid rgba($color-brand,.8);
+                //background: rgba(white,.02);
+                border:1px solid rgba($color-brand,1);
+                border-radius:25px;
+                //@include box_shadow(1);
+            }
+        }
+    }
+    .small-menu{
+        @extend .center.vertical;
+        
+        right:20px;
+        cursor: pointer;
+        color:white;
+        font-size:30px;
+        display: none;
+        background:rgba(white,.01);
+        padding:0px 8px;
+        border-radius:8px;
+        &:hover{
+            @include box_shadow(1);
+        }
+    }
+    @media (max-width:645px){
+        padding:36px 50px 36px 50px;
+    }
+    @media (max-width:570px){
+        padding:22px 20px 22px 20px;
+        height:80px;
+       .nav{
+            display:none!important;
+        }
+        .small-menu{
+            display: inline;
+        }
+    }
+}

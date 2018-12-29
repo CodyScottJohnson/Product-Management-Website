@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Varela');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'variables';
+
+body,html{
+    background: $color-background;
+}
+.modal-lg{
+    max-width:1000px!important;
+    padding:0px;
+    margin:0px;
+    //width:calc(100% - 50px);
+    
+  
+}
+.light-modal .modal-content{
+    background-color: rgba(white,0);
+    border: none;
+}
