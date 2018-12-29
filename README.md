@@ -7,7 +7,9 @@
 
 # Product Management Website
 
- ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/LandingPage.png)  ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/LandingPage.png) 
+ ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/LandingPage.png)  
+ 
+ ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/ContactModal.png) ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/ProjectModal.png) 
 
 ## Development server
 
