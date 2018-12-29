@@ -1,6 +1,13 @@
-# UPma
+<h1 align="center">
+  <br>
+  <a href="https://uofupma.com"><img src="https://raw.githubusercontent.com/codyscottjohnson/Product-Management-API/master/docs/imgs/PMA-Logo.png" alt="U of U Product Management" width="300"></a>
+  <br>
+  <h4 align="center">Backend for University of Utah Product Management Association</h4>
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+# Product Management Website
+
+| ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Websites/master/docs/LandingPage.png") | ![alt text](https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Websites/master/docs/LandingPage.png") |
 
 ## Development server
 
