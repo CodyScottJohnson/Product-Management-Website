@@ -1,0 +1,20 @@
+<div class="backdrop" [hidden]="!active" (click)="toggleMenu()">
+  <div class="side-nav">
+      <button type="button" class="close" aria-label="Close" (click)="toggleMenu()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="brand">
+          <div class="logo">
+            <img src="assets/img/logo-splash.png">
+          </div>
+        </div>
+        <div class="links">
+          <ul>
+            <li routerLink="" routerLinkActive='active' [routerLinkActiveOptions]="{ exact: true }"><a>Home</a></li>
+            <li routerLink="Projects" routerLinkActive='active'><a >Projects</a></li>
+            <li routerLink="Events" routerLinkActive='active'><a>Events</a></li>
+            <li routerLink="Contact" routerLinkActive='active'><a >About</a></li>
+          </ul>
+        </div>
+  </div>
+  </div>

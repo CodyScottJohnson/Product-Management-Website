@@ -8,6 +8,8 @@ import { far } from '@fortawesome/pro-regular-svg-icons';
 import { FooterComponent } from './footer/footer.component';
 import { CirclesComponent } from './circles/circles.component';
 import { HeaderComponent } from './header/header.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { CirclesNewComponent } from './circles-new/circles-new.component';
 
 library.add(far);
 
@@ -17,11 +19,12 @@ library.add(far);
     FontAwesomeModule,
     AppRoutingModule
   ],
-  declarations: [FooterComponent, CirclesComponent, HeaderComponent],
+  declarations: [FooterComponent, CirclesComponent, HeaderComponent, SideNavComponent, CirclesNewComponent],
   exports: [
     HeaderComponent,
     FooterComponent,
     CirclesComponent,
+    SideNavComponent
 
   ],
  

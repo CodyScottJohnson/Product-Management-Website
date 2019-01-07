@@ -13,7 +13,8 @@
     //@include box_shadow(1);
     z-index:9;
     img{
-        height:100%;
+        width:101px;
+        max-height:100%;
     }
     .nav{
         @extend .font-body;
@@ -60,4 +61,33 @@
             display: inline;
         }
     }
+    &.sticky{
+        @include box_shadow(1);
+        background-image:none;
+        background-color:rgba(#273148,.98);
+        position:fixed;
+        height:50px;
+        padding:10px 40px;
+        border-bottom:1px solid $color-brand;
+        img{
+            width:110px;
+        }
+        .nav{
+            @extend .font-body;
+            float:right;
+            .nav-link{
+                //color:#4A4A4A;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding: .4em 1em;
+               
+            }
+        }
+        .small-menu{
+           
+            //color:#4A4A4A;
+           
+        }
+    }
+    
 }

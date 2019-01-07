@@ -3,19 +3,25 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
 @import "~bootstrap/dist/css/bootstrap.css";
 @import 'variables';
+@import 'mixins';
 
 body,html{
     background: $color-background;
 }
 .modal-lg{
     max-width:1000px!important;
-    padding:0px;
-    margin:0px;
+    //padding:0px;
+    //margin:0px;
     //width:calc(100% - 50px);
+    @media (max-width:1000px){
+        padding:0px;
+        margin:0px;
+    }
     
   
 }
 .light-modal .modal-content{
     background-color: rgba(white,0);
     border: none;
+
 }

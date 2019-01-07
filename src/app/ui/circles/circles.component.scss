@@ -9,7 +9,7 @@ svg{
 }
 .circle_label{
     @include box_shadow(1);
-    background-image: radial-gradient(50% 100%, rgba(#6E7A96,.5) 50%, rgba(#4B5476,.5) 100%);
+    background-image: radial-gradient(rgba(#6E7A96,.5) 50%, rgba(#4B5476,.5) 100%,50% 100%);
     height:calc(100% - 100px);
     width:50%;
     position:absolute;
@@ -22,5 +22,8 @@ svg{
     display: block;
     padding:50px;
     
+}
+g{
+    cursor: pointer;
 }
 

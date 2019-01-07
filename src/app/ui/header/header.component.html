@@ -1,5 +1,5 @@
-<div class="header">
-    <img src="assets/img/PMA-Logo-Light.png">
+<div class="header" [ngClass]="{'sticky' : isSticky}">
+    <img [src]="getLogo()">
     <ul class="nav">
       <li class="nav-item">
         <a class="nav-link" routerLink="" routerLinkActive='active' [routerLinkActiveOptions]="{ exact: true }">Home</a>
@@ -14,7 +14,8 @@
         <a class="nav-link"  routerLink="Contact" routerLinkActive='active'>Contact</a>
       </li>
     </ul>
-    <div class="small-menu">
+    <div class="small-menu" (click)="toggleSideNav(!showSideMenu)">
         <fa-icon [icon]="['far', 'ellipsis-h']"></fa-icon>
     </div>
   </div>
+  <app-side-nav [active] = "showSideMenu" (activeStatusChange)="toggleSideNav($event)"></app-side-nav>
