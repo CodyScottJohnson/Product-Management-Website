@@ -23,12 +23,15 @@
     .col-md{
         overflow: hidden;
         padding-right:0px;
+        -webkit-transition: width 1s ease,margin 1s ease; /* Safari */
+        transition: width 1s ease,margin 1s ease; 
         &:nth-child(3){
             padding-right:15px;
         }
         @media (max-width:770px){
             padding-right:15px;
         }
+   
     }
     .option{
         @include box_shadow(1);
@@ -38,6 +41,9 @@
         margin:5px 0px;
         border-radius:8px;
         background: white;
+       
+        -webkit-transition: all 1s ease; /* Safari */
+        transition: all 1s ease; 
         img{
             width:100%;
         }
@@ -62,6 +68,19 @@
                 outline:none;
                 box-shadow: none;
                 //@include box_shadow(1);
+            }
+        }
+        &.active{
+            position: relative;
+            overflow: visible;
+            margin-top:100px;
+            padding-top:100px;
+           
+            img{
+                @extend .center.horizontal;
+                //top:-50%;
+                max-width:200px;
+                top:-100px;
             }
         }
        

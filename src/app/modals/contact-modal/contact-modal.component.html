@@ -1,29 +1,31 @@
 <div class="contact-modal">
- 
+
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md">
-        <div class="option">
+      <div class="col-md" [hidden]="!ShowOption('Help')">
+        <div class="option" [ngClass]="{'active': ExpandedOption('Help')}">
           <img class="banner-img left" src="assets/img/Help-Icon.svg">
-          <button type="button" class="btn btn-outline-primary">I Want To Help</button>
+          <button type="button" class="btn btn-outline-primary"  (click)="SelectOption('Help')">I Want To Help</button>
         </div>
       </div>
-      <div class="col-md">
-        <div class="option">
+      <div class="col-md" [hidden]="!ShowOption('Talk')">
+        <div class="option" [ngClass]="{'active': ExpandedOption('Talk')}">
           <img class="banner-img left" src="assets/img/Talk-Icon.svg">
-          <button type="button" class="btn btn-outline-primary">Lets Talk</button>
+          <button type="button" class="btn btn-outline-primary"  (click)="SelectOption('Talk')">Lets Talk</button>
         </div>
 
       </div>
-      <div class="col-md">
-        <div class="option">
+      <div class="col-md" [hidden]="!ShowOption('Project')">
+        <div class="option" [ngClass]="{'active': ExpandedOption('Project')}">
           <img class="banner-img left" src="assets/img/Project-Icon.svg">
-          <button type="button" class="btn btn-outline-primary">I Have a Project</button>
+          <app-new-project *ngIf="ExpandedOption('Project')"></app-new-project>
+          <button type="button" class="btn btn-outline-primary" (click)="SelectOption('Project')" [hidden]="ExpandedOption('Project')">I
+            Have a Project</button>
         </div>
       </div>
     </div>
   </div>
   <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>

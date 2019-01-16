@@ -1,0 +1,12 @@
+@import "variables";
+@import "mixins";
+@import 'fonts';
+
+.coming-soon{
+    @extend .center.both;
+    @extend .font-header;
+    color:white;
+    text-transform: uppercase;
+    font-size:50px;
+    text-align: center;
+}

@@ -13,6 +13,10 @@
     <img src="https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/ContactModal.png" width="49%"/>
       <img src="https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/ProjectModal.png" width="49%"/>
 </p>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/codyscottjohnson/Product-Management-Website/master/docs/img/Projects.png"
+    width="49%"/>
+</p>
 
  
 
